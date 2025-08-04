@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Laptop</title>
+    <link rel="icon" href="pngtree-laptop-logo-icon-vector-illustration-design-png-image_4613132.png">
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        li {
+            text-decoration: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            background-image: url("image/backgroundLaptop.jpg");
+            background-position-y: -120px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: darken;
+            height: 100vh;
+            overflow-y: hidden;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 900px;
+            margin: 0 auto;
+            animation: fade-in 0.4s;
+        }
+        .logo {
+            color: rgba(225, 225, 225, 1);
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .nav {
+            padding: 20px 0;
+        }
+        .nav-list {
+            display: flex;
+            column-gap: 10px;
+        }
+        .nav-item {
+            margin-left: 25px;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: rgba(225, 225, 225, 0.7);
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .nav-link:hover {
+            color: rgba(225, 225, 225, 1);
+        }
+        
+        .main {
+            color: #fff;
+            text-align: center;
+            margin-top: 0px;
+            animation: fade-in 0.4s 0.1s backwards;
+        }
+        .heading {
+            font-size: 65px;
+            font-weight : 700;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+            line-height: 0.9;
+        }
+        
+        table {
+            width: 90%;
+            padding: 50%;
+            margin: 5%;
+            text-align: left;
+            animation: fade-in 0.4s;
+        }
+        tbody td {
+            background-color: rgba(255,255,255,0);
+            transition: all 0.2s linear; 
+            transition-delay: 0.3s, 0s;
+            opacity: 0.6;
+        }
+        tbody tr:hover td {
+            background-color: rgba(255,255,255,1);
+            transition-delay: 0s, 0s;
+            opacity: 1;
+            font-size: 2em;
+        }
+        td {
+            transform-origin: center ;
+            transition-property: transform;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out;
+        }
+        tr:hover td {
+            transform: scale(1.1);
+        }
+        
+        .footer {
+            display: flex;
+            align-items: center;
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #fff;
+            opacity: 0.8;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-top: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            animation: fade-in 0.4s 0.2s backwards;
+        }
+        
+        .classform {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <header class="header">
+        <p class="logo">Laptop</p>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="showTable()">Laptops</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="showForm()">Subscribe</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <h1 class="heading">Here we will review the best laptops</h1>
+        <div id="tableDiv" style="display: none;">
+            <table style="background-color: rgba(255, 255, 255, 0.667);  color: rgb(72, 72, 72); padding: 20px; border-radius: 10px;">
+                <tr>
+                    <th>name</th>
+                    <th>image</th>
+                    <th>price</th>
+                    <th>link</th>
+                </tr>
+                <tr>
+                    <td>HP Pavilion Plus 14-ew1001nx</td>
+                    <td><img src="image/hp.jpg" alt="HP image" width="50" height="50"></td>
+                    <td>5999 SAR</td>
+                    <td><a href="https://www.jarir.com/sa-en/hp-pavilion-plus-laptops-634878.html?country=sa">visit HP laptop</a></td>
+                </tr>
+                <tr>
+                    <td>Lenovo Yoga Pro 7</td>
+                    <td><img src="image/lenovo.jpg" alt="Lenovo image" width="50" height="50"></td>
+                    <td>7299 SAR</td>
+                    <td><a href="https://www.jarir.com/sa-en/lenovo-yoga-pro7-laptops-636692.html?country=sa">visit Lenovo laptop</a></td>   
+                </tr>
+                <tr>
+                    <td>Acer Swift Laptop</td>
+                    <td><img src="image/acer.jpg" alt="Acer image" width="50" height="50"></td>
+                    <td>5699 SAR</td>
+                    <td><a href="https://www.jarir.com/sa-en/acer-swift-sf14-11-x41l-laptops-635184.html?country=sa">visit Acer laptop</a></td>   
+                </tr>
+                <tr>
+                    <td>Apple MacBook Air Laptop</td>
+                    <td><img src="image/macbook.jpg" alt="MacBook image" width="50" height="50"></td>
+                    <td>6199 SAR</td>
+                    <td><a href="https://www.jarir.com/sa-en/apple-macbook-air-15-m3-laptops-632676.html?country=sa">visit MacBook laptop</a></td>   
+                </tr>
+                <tr>
+                    <td>Huawei MateBook D Laptop</td>
+                    <td><img src="image/huawai.jpg" alt="Huawei image" width="50" height="50"></td>
+                    <td>3199 SAR</td>
+                    <td><a href="https://www.jarir.com/sa-en/huawei-matebook-d-16-laptops-649191.html?country=sa">visit Huawei laptop</a></td>   
+                </tr>
+                <tr>
+                    <td>Asus ExpertBook Laptop</td>
+                    <td><img src="image/asus.jpg" alt="Asus image" width="50" height="50"></td>
+                    <td>4999 SAR</td>
+                    <td><a href="https://www.jarir.com/sa-en/asus-laptops-643410.html?country=sa">visit Asus laptop</a></td>   
+                </tr>
+                <tr>
+                    <td>Honor MagicBook Art Laptop</td>
+                    <td><img src="image/honor.jpg" alt="Honor image" width="50" height="50"></td>
+                    <td>5999 SAR</td>
+                    <td><a href="https://www.jarir.com/sa-en/honor-laptops-645900.html?country=sa">visit Honor laptop</a></td>   
+                </tr>
+            </table>
+        </div>
+        
+        <div class="classform">
+            <div id="formDiv" style="display: none; animation: fade-in 0.4s;">
+                <form style="background-color: rgba(255, 255, 255, 0.667); height: 350px; width: 300px; border-radius: 10px;padding: 20px;margin: 5px;">
+                    <h2 style="color: rgb(72, 72, 72); padding: 10px;">Subscribe</h2>
+                    <p style="color: rgb(72, 72, 72); padding: 0px; margin-bottom: 25px;">If you want to know the lastest offers,subscribe with us!</p>
+                    <input type="text" placeholder="Name" style="margin-bottom: 15px; padding: 5px; width: 90%;"><br>
+                    <input type="email" placeholder="Email" style="margin-bottom: 15px; padding: 5px; width: 90%;"><br>
+                    <input type="date" placeholder="Date" style="margin-bottom: 15px; padding: 5px; width: 90%;"><br>
+                    <button type="submit" style="margin: 10px; padding: 10px ; background-color: rgb(72, 72, 72); color: white; border: none; border-radius: 5px; width: 90%;">Done</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p class="copyright">&copy; 2025. copyright   by Jory</p>
+        <p class="stats">First project.</p>
+    </footer>
+    
+    
+    <script>
+        function showTable() {
+            var tableDiv = document.getElementById("tableDiv");
+            var formDiv = document.getElementById("formDiv");
+            if (tableDiv.style.display === "none") {
+                tableDiv.style.display = "block";
+                formDiv.style.display = "none";
+            } else {
+                tableDiv.style.display = "none";
+            }
+        }
+        
+        function showForm() {
+            var tableDiv = document.getElementById("tableDiv");
+            var formDiv = document.getElementById("formDiv");
+            if (formDiv.style.display === "none") {
+                formDiv.style.display = "block";
+                tableDiv.style.display = "none";
+            } else {
+                formDiv.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
